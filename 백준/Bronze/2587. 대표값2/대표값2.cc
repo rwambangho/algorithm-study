@@ -19,7 +19,6 @@ int main() {
 		
 			cin >> input[i];
 			sum_data += input[i];
-			//input = num;
 		
 	}
 	
