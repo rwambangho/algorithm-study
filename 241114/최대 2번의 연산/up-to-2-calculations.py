@@ -1,10 +1,10 @@
 a = int(input())
 
 if a % 2 == 0:
-    c=a/2
+    a/=2
 
-if c % 2 != 0:
-    c+=1
-    c/=2
+if a % 2 != 0:
+    a+=1
+    a/=2 
 
-print(int(c))
+print(int(a))
