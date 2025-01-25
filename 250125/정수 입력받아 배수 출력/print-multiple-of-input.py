@@ -1,3 +1,5 @@
 n=int(input().split())
-for n in range(n,n*6,5):
-    print(n, end=' ')
+for n in numbers:
+    for i in range(n, n * 6, n):
+        print(i, end=' ')
+    print()
