@@ -1,12 +1,10 @@
 n=int(input())
 arr= list(map(float,input().split()))
 
-sum=0
-cnt=0
-for i in range(n):
-    sum+=arr[i]
-    cnt+=1
-val=sum/cnt
+total=sum(arr)
+
+
+val=total/n
 if val > 0:
     print(f"{val:.1f}")
     if val >= 4.0:
