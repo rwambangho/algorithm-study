@@ -9,7 +9,7 @@ for i in range(2,10,3):
     cnt+=1
 
     
-
-print(f"{total} {total1/cnt}")
+avg=total1/cnt
+print(f"{total} {avg:.1f}")
 
     
