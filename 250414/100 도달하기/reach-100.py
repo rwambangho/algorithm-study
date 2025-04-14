@@ -7,11 +7,10 @@ while True:
     if p>=100:
         print(p)
         break
-    elif pp>=100:
-        print(pp)
+    elif p<100 and pp>=100:
+        print(p, pp)
         break
-    else:
-        print(p, pp,end=' ')
+    print(p, pp,end=' ')
     
     
     
