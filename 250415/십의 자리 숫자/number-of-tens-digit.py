@@ -1,6 +1,8 @@
 n=list(map(int,input().split()))
-cnt_arr=[0 for _ in range(1,11)]
+cnt_arr=[0 for _ in range(10)]
 for elem in n:
+    if elem == 0:
+        break
     i=elem//10
     cnt_arr[i] += 1
 
