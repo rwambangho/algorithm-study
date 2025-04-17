@@ -1,20 +1,32 @@
 n,m=map(int,input().split())
 a=list(map(int,input().split()))
 b=list(map(int,input().split()))
+cnt=0
+s=len(a)
+e=len(b)
+ans=False
 if b[0] in a:
     start=a.index(b[0])
-    for i in range(len(b)):
-        if i==len(b)-1 and a[start] == b[i]:
-            print("Yes")
-            break
-        
-        if a[start] != b[i]:
-            print("No")
-            break
+    for j in range(start,s-e+1):
+        for i in range(e):
+            if a[j]==b[i]:
+                cnt+=1
+            j+=1
+        if cnt==e:
+            ans=True
         else:
-            start+=1
+            cnt=0
+else: #b의 첫번째 원소가 a에 없다면 
+    print("No")         
+            
+if ans:
+    print("Yes")
 else:
-    print("No")       
+    print("No")
+
+
+
+     
     
     
         
