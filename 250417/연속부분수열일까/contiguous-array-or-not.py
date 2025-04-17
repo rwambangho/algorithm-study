@@ -13,7 +13,8 @@ if b[0] in a:
             break
         else:
             start+=1
-        
+else:
+    print("No")       
     
     
         
