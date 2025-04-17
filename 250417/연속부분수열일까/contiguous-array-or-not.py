@@ -16,8 +16,7 @@ if b[0] in a:
             ans=True
         else:
             cnt=0
-else: #b의 첫번째 원소가 a에 없다면 
-    print("No")         
+        
             
 if ans:
     print("Yes")
