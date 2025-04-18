@@ -4,9 +4,9 @@ cnt_arr=[0 for _ in range(1001)]
 stack=[]
 for elem in nums:
     cnt_arr[elem]+=1
-for elem in cnt_arr:
-    if elem == 1:
-        stack.append(cnt_arr.index(elem))
+for i in range(1001):
+    if cnt_arr[i] == 1:
+        stack.append(i)
 if len(stack) != 0:
     print(max(stack))
 else:
