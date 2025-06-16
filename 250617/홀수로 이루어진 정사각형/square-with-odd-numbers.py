@@ -5,11 +5,10 @@ for i in range(n):
     for j in range(n):
         grid[i][j]=cnt
         cnt+=2
+        print(grid[i][j],end=' ')
+    print()
     cnt=grid[i][1]
 
 
-for row in grid:
-    for elem in row:
-        print(elem,end=' ')
-    print()
+
 
