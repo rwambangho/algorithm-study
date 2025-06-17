@@ -1,13 +1,11 @@
 n=int(input())
-cnt=11
-grid=[[0 for _ in range(n)]for _ in range(n)]
-for i in range(n):
-    for j in range(n):
-        grid[i][j]=cnt
-        cnt+=2
-        print(grid[i][j],end=' ')
+
+
+for i in range(0,2*n,2):
+    for j in range(11,n*2-1+11,2):
+        print(j+i,end=' ')
     print()
-    cnt=grid[i][1]
+
 
 
 
