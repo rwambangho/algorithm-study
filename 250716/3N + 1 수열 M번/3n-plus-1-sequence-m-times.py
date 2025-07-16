@@ -9,6 +9,7 @@ for _ in range(m):
         else:
             n=n*3+1
         cnt+=1
+    print(cnt)
 
-print(cnt)
+
 
