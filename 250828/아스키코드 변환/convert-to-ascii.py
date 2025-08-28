@@ -1,0 +1,5 @@
+a,b=input().split()
+b=int(b)
+asc=ord(a)
+num=chr(b)
+print(asc,num)
