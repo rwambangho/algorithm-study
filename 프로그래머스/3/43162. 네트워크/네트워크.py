@@ -1,25 +1,21 @@
 def solution(n, computers):
     answer = 0
+    visited=[False]*(n+1)
     c=len(computers)
-    visited=[False] *c
-    stack=[]
+    # 깊이우선탐색을 해서 더 이상 갈 곳이 없으면 answer+1
     def dfs(start_node):
-        count=0
-        # 현재노드 방문처리
+        # 일단 시작노드 방문처리
         visited[start_node]=True
-        stack.append(start_node)
-        # 인접노드 순회해서 방문안한노드 방문하기
-        for i in range(c):
+        for i in range(n):
             if computers[start_node][i]==1 and visited[i]==False:
                 dfs(i)
         
-        count+=1
-        return count
+        return 1
     
     answer+=dfs(0)
-    for i in range(c):
+    for i in range(n):
         if not visited[i]:
             answer+=dfs(i)
-            
-    return answer       
     
+          
+    return answer
